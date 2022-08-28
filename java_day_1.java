@@ -1058,6 +1058,48 @@ class q7{
         }
         
     }
+    
+}
+
+class q8{
+    void thirdPerfect(int n){
+        int count =0 ;
+        int i =1 ;
+        int sum =0;
+        while(count !=3){
+        while(i<n){
+            if(n%i==0)
+            {
+                sum+=i;
+                i++;
+            }
+            
+            else{i++;}
+            
+            
+
+                }
+       
+            if(sum==n  ){
+                System.out.println("Perfect number ="+n);
+                count++;
+                sum=0;
+                n++;
+                i=1;
+                
+                
+            }else {
+                n++;
+                sum =0 ;
+                i=1;
+            }
+            
+            
+            
+        }
+        
+        
+    }
 }
 
 public class Java_day_1 {
@@ -1076,6 +1118,8 @@ public class Java_day_1 {
         a6.biasedPower(5);
         q7 a7 = new q7();
         a7.Perfect(7);
+        q8 a8 = new q8();
+        a8.thirdPerfect(6);
     }
 }
 
